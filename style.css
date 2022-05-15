@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #333;
+    background: #fff;
 }
 #tickets{
     color: #1fc175;
@@ -42,11 +42,11 @@ body{
     padding: .5rem .8rem;
     border-radius: .3rem;
     color: #fff;
-    background: #06b463;
+    background: #8fc453;
     border: none;
 }
 .green-button:hover{
-    background: #00f985;
+    background: #76c021;
 }
 .speakers-container{
     background: #fff;
@@ -59,7 +59,7 @@ body{
     height: 100%;
 }
 #events{
-    background: inherit;
+    background: #333;
 }
 .form-container{
     background: #fff;
@@ -80,12 +80,13 @@ input{
 }
 .form-btn{
     color: #fff;
-    background: #1fc175;
+    background: #8fc453;
     border: none;
     padding: .5rem;
+    border-radius: .3rem;
 }
 .form-btn:hover{
-    background: #00f985;
+    background: #76c021;
 }
 .hidden-link{
     display: none;
@@ -120,4 +121,20 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
     background: #666;
     height: 2rem;
+}
+.promo-container{
+    background: #fff;
+}
+.card-group{
+    width: 80%;
+}
+.card-text{
+    font-size: .8rem;
+}
+.card-body span{
+    font-size: .6rem;
+    color: #333;
+}
+.footer{
+    background: #333;
 }
