@@ -1,7 +1,7 @@
 let cantidad = document.querySelector(".cantidad"),
     categoria = document.querySelector(".categoria"),
-    total = document.querySelector(".total"),
     resumen = document.querySelector(".resumen"),
+    mensaje = document.querySelector(".alert"),
     borrar = document.querySelector(".borrar");
 
 resumen.addEventListener("click", aplicarDescuento);
@@ -11,10 +11,17 @@ function aplicarDescuento(){
     let descuento;
 
     if (cantidad.value == ""){
-        alert("Ingrese cantidad de tickets");
+        mensaje.classList.remove("alert-primary");
+        mensaje.classList.add("alert-danger");
+        mensaje.innerHTML = "Ingrese cantidad de entradas";
         return;
     }
+    mensaje.classList.add("alert-primary");
+    mensaje.classList.remove("alert-danger");
+    mensaje.innerHTML = "Total a Pagar: $<span class='total'></span>";
 
+    let total = document.querySelector(".total");
+    
     switch(categoria.value){
         case "General":
             descuento = 0;
