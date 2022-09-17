@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <!-- Titulo de pagina -->
+    <title>Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- HEADER PROFILE -->
+    <header class="profile container ">
+        <!-- theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <!-- imagen de nuestro portafolio -->
+                        <img src="assets/img/foto.JPEG" alt="Imagen de Perfil">
+                    </div>
+                 </div>
+                  <h2 class="profile__name">Jimmy Gonzalez</h2>
+                  <h3 class="profile__profession">Software Developer</h3>
+
+                  <ul class="profile__social">
+                    <a href="mailto:jimmynils2@gmail.com?subject=Get in touch with me" class="profile__social-link" target="_blank"><i class="ri-mail-line"></i></a>
+                    <a href="https://www.linkedin.com/in/jimmynils2" class="profile__social-link" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+                    <a href="https://github.com/JimmyNils2" class="profile__social-link" target="_blank"><i class="ri-github-line"></i></a>
+                  </ul>
+            </div>
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                        <h3 class="profile__info-number">3</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                </div> 
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">27</h3>
+                    <p class="profile__info-description">Years<br>old</p>
+                        </p>
+                </div> 
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">Argentina</h3>
+                    <p class="profile__info-description">Buenos<br>Aires</p>
+                </div> 
+            </div>
+            <div class="profile__buttons">
+                <!-- Insertar CV -->
+                <a dowload="" href="/assets/pdf/CV Jimmy 2022 (Spanish).pdf" class="button">Download CV<i class="ri-download-line"></i></a>
+                <div class="profile__buttons-small">
+                    <a href="https://api.whatsapp.com/send?phone=541130081072&text=Hello, more information!" target="_blank" class="button button__small button__gray"><i class="ri-whatsapp-line"></i></a>
+                    <a href="mailto:jimmynils2@gmail.com?subject=Get in touch with me" class="button button__small button__gray" target="_blank"><i class="ri-mail-line"></i></a>
+                    <!-- <a href="https://m.me/Darelisquintero" target="_blank" class="button button__small button__gray"><i class="ri-messenger-line"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <section class="filters container">
+            <!-- FILTERS TABS -->
+            <ul class="filters__content">
+                <button class="filter__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+
+                <button class="filter__button" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+
+                <!-- PROJECTS -->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="assets/img/scientificCalculator.png" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Online Scientific Calculator</span>
+                                <h3 class="projects__title">Calculator</h3>
+                                <a href="/projects/Calculator/index.html" class="projects__button button button__small" target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/landingPage.png" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Landing Page</span>
+                                <h3 class="projects__title">Events Page</h3>
+                                <a href="/projects/landingPage/index.html" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/loginSystem.png" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">CRUD</span>
+                                <h3 class="projects__title">Login System</h3>
+                                <a href="https://github.com/JimmyNils2/JavaCRUD" class="projects__button button button__small" target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/ecommerce.png" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Website</span>
+                                <h3 class="projects__title">Ecommerce</h3>
+                                <a href="https://github.com/JimmyNils2/fixedStreet" class="projects__button button button__small" target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/googleClone.png" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Clone</span>
+                                <h3 class="projects__title">Google</h3>
+                                <a href="https://github.com/JimmyNils2/Edx" class="projects__button button button__small" target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SKILLS -->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Frontend developer
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group"> 
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group"> 
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Backend Developer
+                        </h3>
+                        <div class="skills__box">
+                            <div class="skills__group"> 
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group"> 
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">NodeJs</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Google Apps Script</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>   
+    </main>
+
+    <!-- footer -->
+    <footer class="footer container">
+        <span class="footer__copy">Get in touch with me</span>
+    </footer>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>

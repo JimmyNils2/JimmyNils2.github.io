@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+html{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.4;
+}
+
+body{
+    display: flex;
+    background: linear-gradient(90deg,#2f2e2e 0%, #FCFCFC);
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.calculator{
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.5);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.calculator__display{
+    background: #333;
+    color: #fff;
+    width: 16.25rem;
+    padding: .75rem 1rem;
+    text-align: right;
+    font-size: calc(1rem *1.2 *1.2);
+}
+.calculator__keys{
+    background: rgba(36, 36, 36, 0.8);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5px;
+    grid-template-areas:
+        ". . . . . ."
+        ". . . . . ."
+        "one two three . . ."
+        "four five six . . ."
+        "seven eight nine . . equal"
+        ". zero . . . equal";
+}
+.calculator__keys > button{
+    border: 0;
+    padding: .8rem;
+    cursor: pointer;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+/* button{
+    border: 1px solid #444;
+    cursor: pointer;
+} */
+.equal{
+    grid-area: equal;
+    background: #eb7024;
+    transition: .3s;
+}
+.equal:focus,
+.equal:active{
+    background: #db5807;
+    /* border: solid 2px #000; */
+    /* color: #fff; */
+}
+[data-type='operator'],
+[data-type='funct']{
+    background: #aaa;
+}
+[data-state='selected'],
+[data-type='funct']:active,
+[data-type='funct']:focus,
+[data-type='operator']:focus,
+[data-type='operator']:active,
+[data-type='number']:focus,
+[data-type='number']:active{
+    background: #666;
+}
+[data-type='number']{
+    background: #ccc;
+}
