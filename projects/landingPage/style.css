@@ -5,6 +5,9 @@
 }
 body{
     background: #fff;
+    position: relative;
+    padding-bottom: 6em;
+    min-height: 100vh;
 }
 #tickets{
     color: #1fc175;
@@ -140,10 +143,7 @@ html::-webkit-scrollbar-thumb{
 }
 .footer{
     background: #333;
-}
-.footer2{
-    background: #333;
     position: absolute;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
