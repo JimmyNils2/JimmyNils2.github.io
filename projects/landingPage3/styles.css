@@ -1,0 +1,132 @@
+
+/* Variables */
+:root{
+    --body-first-color: #000;
+    --body-second-color: #434343;
+    --main-color: #D5AC8C;
+    --second-color: #63421E;
+    --white-color: #fff;
+}
+/* Mobile */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--body-first-color);
+    background: -webkit-linear-gradient(to right, var(--body-second-color), var(--body-first-color));
+    background: linear-gradient(to right, var(--body-second-color), var(--body-first-color));
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+button{
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.about{
+    height: 500px;
+    background-image: url(./assets/img/imagenCentral.png);
+    background-size: cover;
+    object-fit: fill;
+    padding: 70px 20px;
+}
+.about h1{
+    color: var(--white-color);
+}
+.about p{
+    width: 200px;
+}
+.about button{
+    background: #212529;
+    color: var(--white-color);
+    border-style: none;
+    transition: .3s;
+}
+.about button:hover{
+    background: var(--body-first-color);
+}
+.products h2{
+    font-size: 35px;
+    color: var(--main-color);
+    text-align: center;
+    margin: 20px auto;
+}
+.products article{
+    background: var(--body-first-color);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border-radius: 10px
+}
+.products img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.products .description{
+    padding: 30px;
+    display: grid;
+}
+.products h3, .products .presentation{
+    color: var(--main-color);
+}
+.products p{
+    color: var(--white-color);
+    margin: 10px 0;
+}
+.products button{
+    background: var(--body-first-color);
+    color: var(--main-color);
+    border: solid 1px var(--main-color);
+    margin: 10px auto;
+    transition: .3s;
+}
+.products button:hover{
+    background: var(--body-second-color);
+}
+.alt img{
+    width: 100%;
+    height: 350px;
+}
+.alt .description{
+    background: var(--main-color);
+    border-radius: 0 0 10px 10px;
+}
+.alt h3, .alt .presentation{
+    color: var(--second-color) ;
+}
+.alt button{
+    background: transparent;
+    color: var(--second-color);
+    border: var(--second-color) solid 1px;
+    height: 42.6px;
+    transition: .3s;
+}
+.alt button:hover{
+    background: #dfc2ab;
+}
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background: var(--body-second-color);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background: #dfc2ab;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:var(--main-color);
+}
+/* Tablet */
+@media screen and (min-width: 550px){
+    .alt{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .alt img{
+        width: 300px;
+        border-radius: 0 10px 10px 0;
+    }
+    .alt .description{
+        border-radius: 10px 0 0 10px;
+    }
+}
