@@ -58,10 +58,23 @@ keys.addEventListener('click', event =>{
         operatorKeys.forEach(key => key.dataset.state='');
         const functKeys = keys.querySelectorAll('[data-type="funct"]' );
         functKeys.forEach(key => key.dataset.state='');
+        
         //Reset display value
         if (calculator.dataset.operator = 'c'){
             display.textContent = '0';
             key.dataset.state = '';
+        }
+
+        if (calculator.dataset.operator = 'mr'){
+            if (calculator.dataset.mr == 0 && displayValue == 0){
+                console.log('Es 0');
+                calculator.dataset.mr = displayValue;
+            }else{
+                console.log('Almacena otro numero');
+                let firstNumber = displayValue;
+                display.textContent = calculator.dataset.mr;
+                calculator.dataset.mr = firstNumber;
+            }
         }
 
         //Add selected state to the current key
@@ -88,8 +101,8 @@ keys.addEventListener('click', event =>{
 
 function calculate(firstNumber, operator, secondNumber){
 
-    firstNumber = parseInt(firstNumber);
-    secondNumber= parseInt(secondNumber);
+    firstNumber = parseFloat(firstNumber);
+    secondNumber= parseFloat(secondNumber);
 
     if (operator == 'plus') return firstNumber + secondNumber;
     if (operator == 'minus') return firstNumber - secondNumber;
